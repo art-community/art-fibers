@@ -1,11 +1,11 @@
-# ART Example
+# ART Fibers
 
-ART Example will explain you how to use ART modules together.
+ART Fibers allows you to use Native Coroutines with pure Java code by GraalVM Native Image and C specialized library.
 
 ## Badges
 
-[![ART Example Branch](https://github.com/art-community/art-example/actions/workflows/push-branch.yml/badge.svg)](https://github.com/art-community/art-example/actions/workflows/push-branch.yml)
-![GitHub repo size](https://img.shields.io/github/repo-size/art-community/art-example)
+[![ART Fibers Branch](https://github.com/art-community/art-fibers/actions/workflows/push-branch.yml/badge.svg)](https://github.com/art-community/art-fibers/actions/workflows/push-branch.yml)
+![GitHub repo size](https://img.shields.io/github/repo-size/art-community/art-fibers)
 
 ## Requirements
 
@@ -14,34 +14,9 @@ ART Example will explain you how to use ART modules together.
 
 ## Bugs and Feedback
 
-For bugs, questions and discussions please use the [Github Issues](https://github.com/art-community/art-example/issues).
+For bugs, questions and discussions please use the [Github Issues](https://github.com/art-community/art-fibers/issues).
 
 Join us on Telegram: https://t.me/art_github
-
-## Usage
-
-unix-like:
-
-```bash
-git clone https://github.com/art-community/art-example
-cd art-example
-git checkout experimental
-chmod +x gradlew 
-./gradlew build-jar-executable
-cd example-kotlin/build/executable
-java -jar example-kotlin.jar
-```
-
-windows:
-
-```bash
-git clone https://github.com/art-community/art-example
-cd art-example
-git checkout experimental
-gradlew build-jar-executable
-cd example-kotlin/build/executable
-java -jar example-kotlin.jar
-```
 
 ## LICENSE
 
