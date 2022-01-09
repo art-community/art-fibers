@@ -13,7 +13,6 @@ import org.graalvm.word.*;
 import static io.art.core.constants.GraalConstants.*;
 import static io.art.core.graal.GraalNativeDirective.*;
 import static io.art.fibers.constants.FiberConstants.GraalConstants.*;
-import java.nio.file.*;
 import java.util.*;
 
 @CContext(GraalCoroutine.Directives.class)
@@ -22,7 +21,7 @@ public class GraalCoroutine {
     public static final class Directives implements CContext.Directives {
         private final GraalNativeDirective directive =
                 singleLibrary(
-                        Paths.get(coroutineLibraryName() + GRAAL_LIBRARY_EXTRACTION_DIRECTORY_POSTFIX),
+                        coroutineLibraryName() + GRAAL_LIBRARY_EXTRACTION_DIRECTORY_POSTFIX,
                         coroutineLibraryFileName(),
                         coroutineLibraryName()
                 ).build();
