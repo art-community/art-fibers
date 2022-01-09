@@ -16,11 +16,6 @@
  * limitations under the License.
  */
 
-plugins {
-    `java-library`
-    id("art-internal-jvm")
-}
-
 group = "io.art.fibers"
 
 tasks.withType(type = Wrapper::class) {
@@ -32,23 +27,4 @@ allprojects {
     repositories {
         mavenCentral()
     }
-}
-
-dependencies {
-    val graalVersion: String by project
-    val lombokVersion: String by project
-    val javaModulesVersion: String by project
-
-    compileOnly("org.graalvm.nativeimage", "svm", graalVersion)
-    compileOnly("org.projectlombok", "lombok", lombokVersion)
-    annotationProcessor("org.projectlombok", "lombok", lombokVersion)
-
-    embedded("io.art.java:core:$javaModulesVersion")
-    embedded("io.art.java:meta:$javaModulesVersion")
-    embedded("io.art.java:logging:$javaModulesVersion")
-}
-
-executable {
-    main("io.art.fibers.Fibers")
-    native()
 }

@@ -36,3 +36,5 @@ pluginManagement {
         id("art-internal-jvm") version internalPluginVersion
     }
 }
+
+include("fibers")
