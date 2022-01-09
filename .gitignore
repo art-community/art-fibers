@@ -77,3 +77,4 @@ CMakeFiles/
 Makefile
 CMakeSettings.json
 .vs
+!fibers/src/main/resources/*
