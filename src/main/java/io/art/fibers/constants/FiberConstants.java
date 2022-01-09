@@ -5,6 +5,10 @@ import static io.art.core.determiner.SystemDeterminer.*;
 public interface FiberConstants {
     interface GraalConstants {
         static String coroutineLibraryName() {
+            return "coroutine";
+        }
+
+        static String coroutineLibraryFileName() {
             if (isWindows()) {
                 return "coroutine-windows";
             }
