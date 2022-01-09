@@ -46,10 +46,7 @@ art {
     }
     executable {
         main("io.art.fibers.Fibers")
-        native {
-            static()
-            musl()
-        }
+        native()
     }
 }
 
