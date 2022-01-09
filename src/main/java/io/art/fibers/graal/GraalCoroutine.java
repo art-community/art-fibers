@@ -10,7 +10,6 @@ import org.graalvm.nativeimage.c.function.*;
 import org.graalvm.nativeimage.c.struct.*;
 import org.graalvm.nativeimage.c.type.*;
 import org.graalvm.word.*;
-import static io.art.core.graal.GraalNativeDirective.GraalSingleLibrary.*;
 import static io.art.fibers.constants.FiberConstants.GraalConstants.*;
 import java.util.*;
 
@@ -18,7 +17,7 @@ import java.util.*;
 public class GraalCoroutine {
     @Getter
     public static final class Directives implements CContext.Directives {
-        private final GraalNativeDirective directive = singleLibrary()
+        private final GraalNativeDirective directive = GraalSingleLibrary.singleLibrary()
                 .libraryFileName(coroutineLibraryFileName())
                 .headerFileName(coroutineLibraryName())
                 .build()
