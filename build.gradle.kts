@@ -17,11 +17,11 @@
  */
 
 plugins {
-    id("art-internal-jvm")
     `java-library`
+    id("art-internal-jvm")
 }
 
-group = "io.art.example"
+group = "io.art.fibers"
 
 tasks.withType(type = Wrapper::class) {
     gradleVersion = "7.2"
@@ -33,7 +33,6 @@ allprojects {
         mavenCentral()
     }
 }
-
 
 dependencies {
     val graalVersion: String by project

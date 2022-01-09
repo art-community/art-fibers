@@ -20,6 +20,7 @@
 rootProject.name = "art-fibers"
 
 pluginManagement {
+    val internalPluginVersion: String by settings
     repositories {
         gradlePluginPortal()
         maven { url = uri("https://nexus.art-platform.io/repository/art-gradle-plugins/") }
@@ -27,8 +28,11 @@ pluginManagement {
     resolutionStrategy {
         eachPlugin {
             if (requested.id.id.contains("art")) {
-                useModule("io.art.gradle:art-gradle:main")
+                useModule("io.art.gradle:art-gradle:$internalPluginVersion")
             }
         }
+    }
+    plugins {
+        id("art-internal-jvm") version internalPluginVersion
     }
 }
