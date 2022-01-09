@@ -11,6 +11,6 @@ public class GraalCoroutineFeature implements Feature {
     @Override
     public void beforeAnalysis(BeforeAnalysisAccess access) {
         NativeLibraries nativeLibraries = ((FeatureImpl.BeforeAnalysisAccessImpl) access).getNativeLibraries();
-        nativeLibraries.addStaticNonJniLibrary(coroutineLibraryName());
+        nativeLibraries.addStaticNonJniLibrary(coroutineLibraryFileName());
     }
 }
