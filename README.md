@@ -1,6 +1,6 @@
 # ART Fibers
 
-ART Fibers allows you to use Native Coroutines with pure Java code by GraalVM Native Image and C specialized library.
+ART Fibers allows you to use Native Coroutines with pure Java code by GraalVM Native Image and C special library.
 
 ## Badges
 
