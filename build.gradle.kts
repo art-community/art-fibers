@@ -16,6 +16,10 @@
  * limitations under the License.
  */
 
+plugins {
+    id("art-internal-jvm")
+}
+
 group = "io.art.fibers"
 
 tasks.withType(type = Wrapper::class) {
