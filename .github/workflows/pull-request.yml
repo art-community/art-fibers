@@ -15,4 +15,4 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       - name: Build with Gradle
-        run: ./gradlew clean build build-native-executable --max-workers 8 --parallel -PgraalWindowsVisualStudioVars="C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
+        run: ./gradlew clean build build-native-executable --max-workers 8 --parallel -PgraalWindowsVisualStudioVars="C:\Program Files (x86)\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
