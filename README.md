@@ -4,7 +4,7 @@ ART Fibers allows you to use Native Coroutines with pure Java code by GraalVM Na
 
 ## Badges
 
-[![ART Fibers Branch](https://github.com/art-community/art-fibers/actions/workflows/push-branch.yml/badge.svg)](https://github.com/art-community/art-fibers/actions/workflows/push-branch.yml)
+[![ART Fibers Branch](https://github.com/art-community/art-fibers/actions/workflows/push-main.yml/badge.svg)](https://github.com/art-community/art-fibers/actions/workflows/push-branch.yml)
 ![GitHub repo size](https://img.shields.io/github/repo-size/art-community/art-fibers)
 
 ## Requirements
