@@ -78,6 +78,9 @@ Makefile
 CMakeSettings.json
 .vs
 !fibers/src/main/resources/*
+fibers/dependencies/coroutine/Debug
+fibers/dependencies/coroutine/Release
+fibers/dependencies/coroutine/x64
 ALL_BUILD.vcxproj.filters
 *.sln
 *.vcxproj
