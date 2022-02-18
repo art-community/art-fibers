@@ -81,6 +81,7 @@ CMakeSettings.json
 fibers/dependencies/coroutine/Debug
 fibers/dependencies/coroutine/Release
 fibers/dependencies/coroutine/x64
+fibers/dependencies/coroutine/coroutine.dir
 ALL_BUILD.vcxproj.filters
 *.sln
 *.vcxproj
