@@ -78,3 +78,9 @@ Makefile
 CMakeSettings.json
 .vs
 !fibers/src/main/resources/*
+ALL_BUILD.vcxproj.filters
+*.sln
+*.vcxproj
+*.vcxproj.filters
+ZERO_CHECK.vcxproj.filters
+ZERO_CHECK.vcxproj

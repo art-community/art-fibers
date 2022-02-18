@@ -1,3 +1,5 @@
+import org.gradle.internal.os.OperatingSystem.current
+
 /*
  * ART
  *
@@ -38,4 +40,12 @@ dependencies {
 executable {
     main("io.art.fibers.Fibers")
     native()
+}
+
+sources {
+    cmake("coroutine") {
+        directory(projectDir.resolve("dependencies").toPath())
+        if (current().isLinux || current().isWindows) copy("libcoroutine.a", "src/main/resources/libcoroutine-linux.a")
+        if (current().isMacOsX) copy("libcoroutine.a", "src/main/resources/libcoroutine-osx.a")
+    }
 }
