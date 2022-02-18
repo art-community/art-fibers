@@ -44,6 +44,7 @@ executable {
 
 sources {
     cmake("coroutine") {
+        buildDependsOn()
         directory(projectDir.resolve("dependencies").toPath())
         if (current().isWindows && !wsl) copy("Release/coroutine.lib", "src/main/resources/coroutine-windows.lib")
         if ((current().isWindows && wsl) || current().isLinux) copy("libcoroutine.a", "src/main/resources/libcoroutine-linux.a")
